@@ -1,0 +1,24 @@
+package game;
+import java.util.*;
+
+public class Indoor{
+    ArrayList<String> players;
+
+    public Indoor() {
+        players = new ArrayList<>();
+        players.add("Carrom");
+        players.add("Chess");
+        players.add("Table Tennis");
+    }
+
+    public Indoor(ArrayList<String> customPlayers) {
+        players = customPlayers;
+    }
+
+    public void display() {
+        System.out.println("Indoor Games Players:");
+        for (String player : players) {
+            System.out.println("- " + player);
+        }
+    }
+}
